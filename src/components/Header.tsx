@@ -21,13 +21,13 @@ const Header: React.FC<Props> = (props) => {
     setMemoizedToken(token)
     localStorage.setItem('admin-token', token);
     setToken('')
-  }, [token])
+  }, [handleSetToken, token])
 
   const onResetToken = useCallback(() => {
     handleSetToken('');
     setMemoizedToken('')
     localStorage.removeItem('admin-token');
-  }, [token])
+  }, [handleSetToken])
 
   return (
     <div>

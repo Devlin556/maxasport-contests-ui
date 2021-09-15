@@ -25,15 +25,15 @@ const UsersListPage: React.FC<Props> = () => {
     setGetting(false)
     
     setUsers(response.data.data as Array<User>)
-  }, [users])
+  }, [])
   
   useEffect(() => {
     getUsers()
-  },[]);
+  },[getUsers]);
   
   const resetUsers = useCallback(async () => {
     setResetting(true);
-    const response = await makeRequest({
+    await makeRequest({
       path: '/clear',
       method: 'POST',
       secret: localStorage.getItem('admin-token')!
@@ -54,8 +54,6 @@ const UsersListPage: React.FC<Props> = () => {
 
     setShuffling(false);
   
-    console.log(response)
-    
     setUsers([response.data.data.winner]);
   }, [])
   

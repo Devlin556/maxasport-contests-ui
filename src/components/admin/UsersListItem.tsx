@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card, CardTitle, CardSubtitle, CardBody, CardText, CardLink } from 'reactstrap'
+import { Card, CardTitle, CardBody, CardLink } from 'reactstrap'
 
 
 export interface User {

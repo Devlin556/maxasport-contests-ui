@@ -45,7 +45,7 @@ const RegisterPage: React.FC<Props> = () => {
         <Row>
           <Col sm={4}>
             <Form inline onSubmit={registerUser}>
-              <img src="/example.png" width={375} />
+              <img src="/example.png" width={375} alt="Example" />
               <FormGroup className="mr-sm-2">
                 <Label for="nickname" className="mr-sm-2">VK Page Id</Label>
                 <Input type="text" name="nickname" placeholder="VK Page Id" value={nickname} onChange={(event) => setUsername(event.target.value)}/>
