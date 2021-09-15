@@ -1,0 +1,6 @@
+.navbar-nav {
+    cursor: pointer !important;
+}
+.nav-item:hover {
+    color: #007bff;
+}

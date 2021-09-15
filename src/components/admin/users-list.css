@@ -1,0 +1,18 @@
+.users-list {
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . .";
+}
+
+.users-list-item {
+}
+
+.users-list-page {
+    padding: 10px;
+}
